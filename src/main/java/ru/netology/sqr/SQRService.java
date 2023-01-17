@@ -7,7 +7,7 @@ public class SQRService {
 
         for (int i = 10; i <= 99; i++) {
             if (i * i >= lowLimit & i * i <= upperLimit) {
-                    number++;
+                number++;
             }
         }
 

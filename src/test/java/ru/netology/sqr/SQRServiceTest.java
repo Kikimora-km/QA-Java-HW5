@@ -1,11 +1,12 @@
 package ru.netology.sqr;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SQRServiceTest {
     @Test
-    public void calcSQRWhenLimitsPositive () {
+    public void calcSQRWhenLimitsPositive() {
         SQRService service = new SQRService();
 
         int lowLimit = 0;
@@ -18,7 +19,7 @@ public class SQRServiceTest {
     }
 
     @Test
-    public void calcSQRWhenLimitsNegative () {
+    public void calcSQRWhenLimitsNegative() {
         SQRService service = new SQRService();
 
         int lowLimit = -100;
@@ -31,7 +32,7 @@ public class SQRServiceTest {
     }
 
     @Test
-    public void calcSQRWhenLimitsEqual0 () {
+    public void calcSQRWhenLimitsEqual0() {
         SQRService service = new SQRService();
 
         int lowLimit = 0;
@@ -42,8 +43,9 @@ public class SQRServiceTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
-    public void calcSQRWhenLowLimitNegativeUpperlimitPositive () {
+    public void calcSQRWhenLowLimitNegativeUpperlimitPositive() {
         SQRService service = new SQRService();
 
         int lowLimit = -100;
